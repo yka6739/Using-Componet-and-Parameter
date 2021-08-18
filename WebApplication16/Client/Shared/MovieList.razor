@@ -1,0 +1,16 @@
+﻿<Looping m="m"/>
+
+
+@code {
+    List<Movie> m;
+    protected async override Task OnInitializedAsync()
+    {
+        await Task.Delay(1000);
+        m = new List<Movie>()
+    {
+           new Movie(){Name="Amit",Address="Noida"},
+           new Movie(){Name="Sumit", Address="Delhi"}
+        };
+    }
+
+}

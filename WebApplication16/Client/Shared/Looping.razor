@@ -1,0 +1,22 @@
+﻿
+@if (m == null)
+{
+    <img src="https://miro.medium.com/max/1400/1*CsJ05WEGfunYMLGfsT2sXA.gif" />
+}
+else
+{
+
+
+
+    @foreach (var i in m)
+    {
+        <p> Name is :@i.Name</p>
+        <p>Address is : @i.Address</p>
+    }
+
+}
+@code
+{
+    [Parameter] public  List<Movie> m { get; set; }
+
+}
